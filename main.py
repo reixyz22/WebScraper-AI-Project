@@ -59,7 +59,7 @@ def clean_html(html):  # this takes raw html and makes it into something more re
     description = soup.find('meta', attrs={'name': 'description'}) or soup.find('meta', attrs={
         'property': 'og:description'})
     meta_description = description['content'] if description else 'No description found.'
-
+    # this removes trailing/leading spaces, line breaks, and all html tags
     for script_or_style in soup(["script", "style", "header", "footer", "nav", "aside"]):
         script_or_style.decompose()
     text = soup.get_text()
