@@ -1,8 +1,9 @@
-#  Python WebScraper and OpenAi extraction Project, using Panda
+#  Python WebScraper and OpenAi extraction Project, using Pandas
 
-This project searchs the web for cool AAPI related events in the midwest USA and stores the results in an excel file for viewing. included with in each row in the output should be the 
+This project searchs the web automatically for cool AAPI related events in the midwest USA, scapes and parses the html, extracts data using OpenAI's GPT models API and stores the results in an excel file for viewing. 
+Included with in each row in the output should be the 
 
-The source URL
-name of the event:
-the location: {city,state}
+The source URL:
+Name of the event:
+The location:
 An a.i generated description of the event:
